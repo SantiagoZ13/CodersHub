@@ -1,0 +1,8 @@
+.link{
+    color: var(--color-lotion);
+    padding: 0 12px;
+}
+.link-active{
+    border-left: 1px solid var(--color-lotion);
+    border-radius: 100px;
+}

@@ -1,0 +1,6 @@
+@use "tools";
+
+.main-container{
+    @include tools.container-width();
+    padding: var(--container-padding);
+}
