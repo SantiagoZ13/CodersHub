@@ -4,3 +4,16 @@
     @include tools.container-width();
     padding: var(--container-padding);
 }
+
+.main-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    margin: 20px 0;
+    background-color: var(--color-space-cadet);
+    border-radius: 100px;
+    @include tools.container-width();
+    @include tools.desktop{
+    }
+}
