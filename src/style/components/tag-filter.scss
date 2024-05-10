@@ -1,0 +1,15 @@
+.tags-container{
+    display: flex;
+    gap: 12px;
+}
+.tag{
+    padding: 4px 16px;
+    font-size: 12px;
+    border: 1px solid var(--color-lotion);
+    border-radius: 20px;
+    color: var(--color-lotion);
+}
+.tag-selected{
+    color: var(--color-cetacean-blue);
+    background-color: var(--color-lotion);
+}

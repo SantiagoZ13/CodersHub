@@ -1,5 +1,9 @@
 @use "tools";
 
+section, header{
+    margin: 20px 0;
+}
+
 .main-container{
     @include tools.container-width();
     padding: var(--container-padding);
@@ -10,9 +14,18 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 40px;
-    margin: 20px 0;
     background-color: var(--color-space-cadet);
     border-radius: 100px;
+    @include tools.container-width();
+    @include tools.desktop{
+    }
+}
+
+.tags-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
     @include tools.container-width();
     @include tools.desktop{
     }
