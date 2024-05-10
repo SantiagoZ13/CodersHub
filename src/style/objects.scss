@@ -55,7 +55,6 @@ section, header{
     grid-template-rows: auto;
     gap: 40px;
     @include tools.container-width();
-    
     @include tools.tablet{
         &{
             grid-template-columns: repeat(2, 1fr);  
@@ -66,4 +65,13 @@ section, header{
             grid-template-columns: repeat(3, 1fr);  
         }
     }
+}
+.about-us-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    border-radius: 20px;
+    background-color: var(--color-space-cadet);
+    @include tools.container-width();
 }

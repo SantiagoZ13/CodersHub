@@ -1,7 +1,7 @@
 .card-blog{
     width: auto;
     min-width: 200px;
-    max-width: 300px;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,10 +18,8 @@
     border-radius: 16px 16px 0 0;
     border-bottom: 1px solid var(--color-liberty);
 }
-.blog-paragraph{
-    color: var(--color-lotion);
+.card-blog p{
     padding: 0 20px;
-    font-size: 18px;
 }
 .blog-footer{
     display: flex;
