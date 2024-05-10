@@ -10,3 +10,9 @@
         @content;
     }
 }
+
+@mixin tablet{
+    @media screen and (min-width: settings.$breakpoint-medium) {
+        @content;
+    }
+}

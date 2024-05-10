@@ -55,12 +55,15 @@ section, header{
     grid-template-rows: auto;
     gap: 40px;
     @include tools.container-width();
+    
+    @include tools.tablet{
+        &{
+            grid-template-columns: repeat(2, 1fr);  
+        }
+    }
     @include tools.desktop{
         &{
             grid-template-columns: repeat(3, 1fr);  
-        }
-        .card-blog{
-            width: auto;
         }
     }
 }
