@@ -1,9 +1,8 @@
 .about-us-info{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     justify-content: space-between;
     gap: 32px;
-}
-.about-us-info p{
-    padding: 0 100px 0 0;
 }

@@ -68,10 +68,17 @@ section, header{
 }
 .about-us-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 32px;
     border-radius: 20px;
     background-color: var(--color-space-cadet);
     @include tools.container-width();
+    @include tools.desktop{
+        &{
+            grid-template-columns: repeat(3, 1fr);
+            flex-wrap: nowrap;
+        }
+    }
 }

@@ -1,5 +1,11 @@
+@use "../tools";
 .heading-big{
-    font-size: 44px;
+    font-size: 26px;
     font-weight: 600;
     color: var(--color-lotion);
+    @include tools.desktop{
+        &{
+            font-size: 44px;
+        }
+    }
 }
