@@ -1,4 +1,14 @@
 @use "../tools";
+.heading-md{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-lotion);
+    @include tools.desktop{
+        &{
+            font-size: 24px;
+        }
+    }
+}
 .heading-big{
     font-size: 26px;
     font-weight: 600;

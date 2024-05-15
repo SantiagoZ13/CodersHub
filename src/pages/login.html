@@ -15,31 +15,35 @@
     <title>CodersHub</title>
 </head>
 
-<body>
+<body class="img-login">
     <div class="main-container">
         <header class="main-header">
-
-
             <img class="nav-logo" src="../assets/img/CodersHub.png" alt="Logo de CodersHub">
             <nav>
                 <ul class="nav-list">
                     <li class="nav-item"><a class="link" href="../../index.html">Blog</a></li>
-                    <li class="nav-item"><a class="link link-active" href="#">Quienes somos</a></li>
-                    <li class="nav-item"><a class="link" href="./login.html">Registro</a></li>
+                    <li class="nav-item"><a class="link" href="../pages/about-us.html">Quienes somos</a></li>
+                    <li class="nav-item"><a class="link link-active" href="#">Registro</a></li>
                 </ul>
             </nav>
             <a class="link link-bold" href="">Contáctame</a>
             <img class="menu-mobile" src="../assets/icons/menu-mobile.png" alt="menu-mobile">
         </header>
-        <section class="about-us-container">
-            <div class="about-us-info">
-                <h2 class="heading-big">¿Quienes somos?</h2>
-                <p class="paragraph paragraph-md">CodersHub es una iniciativa que fusiona la pasión por la programación con la creación de una gran
-                    comunidad en línea. Es una plataforma para los programadores y todo tipo de persona que le apasione la
-                    informatica y la tecnologia</p>
-                <a class="button-secondary" href="./login.html">Inicia en CodersHub</a>
+        <section class="login-container">
+            <div class="form-container">
+                <div>
+                    <h2 class="heading-md">Crea una cuenta</h2>
+                    <p class="paragraph-sm paragraph">Inicia en este mundo</p>
+                </div>
+                
+                <input class="input-login" id="name" type="text" placeholder="Nombre">
+                
+                <input class="input-login" id="email" type="email" placeholder="Correo">
+                
+                <input class="input-login" id="password" type="password" placeholder="Contraseña">
+                <a class="button-primary">Crea una cuenta</a>
+                <p class="paragraph-sm form-paragraph">¿Ya tienes cuenta? <a href="">Ingresar</a></p> 
             </div>
-            <img class="about-us-image" src="../assets/img/image-about-us.png" alt="about-us-image">
         </section>
     </div>
 </body>

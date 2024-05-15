@@ -1,3 +1,5 @@
+@use "../tools";
+
 .about-us-info{
     display: flex;
     justify-content: center;
@@ -5,4 +7,10 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 32px;
+}
+.about-us-image{
+    margin-top: 20px;
+    @include tools.desktop{
+        margin: 0;
+    }
 }

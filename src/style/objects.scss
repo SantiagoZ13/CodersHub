@@ -82,3 +82,14 @@ section, header{
         }
     }
 }
+.login-container{
+    display: grid;
+    place-items:center;
+    @include tools.container-width();
+    @include tools.desktop{
+        grid-template-columns: 1fr 1.5fr;
+    }
+}
+.img-login{
+    background: url(../assets/img/login-background.jpg) top /cover no-repeat;
+}
