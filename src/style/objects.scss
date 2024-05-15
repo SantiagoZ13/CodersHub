@@ -87,7 +87,7 @@ section, header{
     place-items:center;
     @include tools.container-width();
     @include tools.desktop{
-        grid-template-columns: 1fr 1.5fr;
+        grid-template-columns: 1fr 1.3fr;
     }
 }
 .img-login{
