@@ -105,3 +105,25 @@ section, header{
         
     }
 }
+.off-screen-mobile-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-cetacean-blue);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: calc(-100%);
+    text-align: center;
+    font-size: 1.6rem;
+    transition: .3s ease;
+    @include tools.container-width();
+    @include tools.desktop{
+        display: none;
+    }
+}
+.off-screen-mobile-menu.active{
+    right: 0;
+}
