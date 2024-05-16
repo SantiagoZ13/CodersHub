@@ -11,14 +11,14 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css">
-    <link rel="stylesheet" href="../style/main.scss">
+    <link rel="stylesheet" href="/src/style/main.scss">
     <title>CodersHub</title>
 </head>
 
 <body class="img-login">
     <div class="main-container">
         <header class="main-header">
-            <img class="nav-logo" src="../assets/img/CodersHub.png" alt="Logo de CodersHub">
+            <img class="nav-logo" src="/src/assets/img/CodersHub.png" alt="Logo de CodersHub">
             <nav>
                 <ul class="nav-list">
                     <li class="nav-item"><a class="link" href="/">Blog</a></li>
@@ -27,22 +27,22 @@
                     <li class="nav-item"><a class="link link-active" href="#">Ingreso</a></li>
                 </ul>
             </nav>
-            <a class="link link-bold" href="">Contáctame</a>
-            <img class="menu-mobile" src="../assets/icons/menu-mobile.png" alt="menu-mobile">
+            <a class="link link-bold" href="/src/pages/contact.html">Contáctame</a>
+            <img class="menu-mobile" src="/src/assets/icons/menu-mobile.png" alt="menu-mobile">
         </header>
         <section class="login-container">
-            <div class="form-container">
+            <form class="form-container">
                 <div>
                     <h2 class="heading-md">Entra en CodersHub</h2>
-                    <p class="paragraph-sm paragraph">Inicia sesión</p>
+                    <p class="paragraph-sm paragraph">Inicia sesión y crea un blog</p>
                 </div>
                 
-                <input class="input-login" id="email" type="email" placeholder="Correo">
+                <input class="input" id="email" type="email" placeholder="Correo">
                 
-                <input class="input-login" id="password" type="password" placeholder="Contraseña">
+                <input class="input" id="password" type="password" placeholder="Contraseña">
                 <a class="button-primary">Crea una cuenta</a>
                 <p class="paragraph-sm form-paragraph">¿Aún no tienes cuenta? <a href="/src/pages/register.html">Registrate</a></p> 
-            </div>
+            </form>
         </section>
     </div>
 </body>

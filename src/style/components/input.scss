@@ -1,4 +1,5 @@
-.input-login{
+@use "../tools";
+.input{
     width: 100%;
     padding: 10px;
     color: var(--color-lotion);
@@ -7,4 +8,14 @@
     border: 1px solid var(--color-lotion);
     border-radius: 4px;
     letter-spacing: 2px;
+}
+.container-inputs-same-column{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    @include tools.desktop{
+        flex-wrap: nowrap;
+    }
 }

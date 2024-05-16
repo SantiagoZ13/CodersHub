@@ -93,3 +93,15 @@ section, header{
 .img-login{
     background: url(../assets/img/login-background.jpg) top /cover no-repeat;
 }
+.contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    @include tools.container-width();
+    @include tools.desktop{
+        flex-wrap: nowrap;
+        
+    }
+}

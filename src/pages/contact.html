@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css">
+    <link rel="stylesheet" href="/src/style/main.scss">
+    <title>CodersHub</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <header class="main-header">
+            <img class="nav-logo" src="/src/assets/img/CodersHub.png" alt="Logo de CodersHub">
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="link" href="/">Blog</a></li>
+                    <li class="nav-item"><a class="link" href="/src/pages/about-us.html">Quienes somos</a></li>
+                    <li class="nav-item"><a class="link" href="#">Registro</a></li>
+                    <li class="nav-item"><a class="link" href="/src/pages/login.html">Ingreso</a></li>
+                </ul>
+            </nav>
+            <a class="link link-bold link-active" href="">Contáctame</a>
+            <img class="menu-mobile" src="/src/assets/icons/menu-mobile.png" alt="menu-mobile">
+        </header>
+        <section class="contact-container">
+            <form class="form-container" action="">
+                <div>
+                    <label class="label" for="name">Nombre</label>
+                    <input class="input" type="text">
+                </div>
+                <div class="container-inputs-same-column">
+                    <div class="wd-100">
+                        <label class="label" for="email">Correo</label>
+                        <input class="input" type="text">
+                    </div>
+                    <div class="wd-100">
+                        <label class="label" for="phone">Numero</label>
+                        <input class="input" type="text">
+                    </div>
+                </div>
+                <div>
+                    <label class="label" for="message">Mensaje</label>
+                    <textarea cols="50" rows="4" class="input" name="message" id="message"></textarea>
+                </div>
+                <a class="button-primary" href="">Enviar</a>
+            </form>
+            <div class="contact-info">
+                <h2 class="heading-big">Contactame</h2>
+                <p class="paragraph paragraph-md">Hola, soy Santiago, un estudiante de ingeniería de sistemas y un fullstack developer con experiencia en diferentes tecnologías</p>
+                <div class="contact-links">
+                    <a class="paragraph paragraph-sm " href="tel:+573138125514"><img src="/src/assets/icons/tel-icon.png" alt="icono de telefono">+57 313-812-5514</a>
+                    <a class="paragraph paragraph-sm " href="mailto:diazsantiagoponce1@gmail.com"><img src="/src/assets/icons/email-icon.png" alt="icono de email">diazsantiagoponce1@gmail.com</a>
+                    <a class="paragraph paragraph-sm under" href="https://github.com/SantiagoZ13"><img src="/src/assets/icons/github-icon.png" alt="icono de GitHub">SantiagoZ13</a>
+                    <a class="paragraph paragraph-sm under" target="_blank" href="https://santiagoz.online"><img src="/src/assets/icons/code-icon.png" alt="icono de portafolio">Mi Portafolio</a>
+                </div>
+                
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
