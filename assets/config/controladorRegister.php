@@ -8,7 +8,14 @@ if(!empty($_POST["btnRegister"])){
         $email = $_POST['email'];
         $password = $_POST['password'];
         $rol = $_POST['selectRol'];
-        $sql=$conexion->query("INSERT INTO usuarios(userName, email, password, rol) VALUES ('$userName', '$email','$password','$rol' )");
-        echo "<div class='alert alert-danger text-center'>USUARIO CREADO CORRECTAMENTE</div>";
+        if($rol == "administrador"){
+            $passwordAdmin = '246QERmnb_';
+            $sql=$conexion->query("INSERT INTO usuarios(userName, email, password, rol, passwordAdmin) VALUES ('$userName', '$email','$password','$rol', '$passwordAdmin')");
+            echo "<div class='alert alert-danger text-center'>ADMINISTRADOR CREADO CORRECTAMENTE<br>Clave dinamica Creada</div>";
+        }else{
+            $sql=$conexion->query("INSERT INTO usuarios(userName, email, password, rol) VALUES ('$userName', '$email','$password','$rol' )");
+            echo "<div class='alert alert-danger text-center'>USUARIO CREADO CORRECTAMENTE</div>";
+        }
+        
     }
 }
