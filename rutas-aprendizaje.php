@@ -14,10 +14,10 @@ if($rutaActual == 'index.php'){
 
 $idCategoria = isset($_GET['categoria']) ? intval($_GET['categoria']) : 0;
 if ($idCategoria > 0) {
-    $sqlBlogs = $conexion->prepare("SELECT id, titulo, descripcion, texto, usuario, imagen, fecha_registro FROM blogs WHERE id_categoria = ? AND tipo = 'blog'");
+    $sqlBlogs = $conexion->prepare("SELECT id, titulo, descripcion, texto, usuario, imagen, fecha_registro FROM blogs WHERE id_categoria = ? AND tipo = 'ruta'");
     $sqlBlogs->execute([$idCategoria]);
 } else {
-    $sqlBlogs = $conexion->prepare("SELECT id, titulo, descripcion, texto, usuario, imagen, fecha_registro FROM blogs WHERE tipo = 'blog'");
+    $sqlBlogs = $conexion->prepare("SELECT id, titulo, descripcion, texto, usuario, imagen, fecha_registro FROM blogs WHERE tipo = 'ruta'");
     $sqlBlogs->execute();
 }
 
@@ -30,14 +30,14 @@ $resultado = $sqlBlogs->fetchAll(PDO::FETCH_ASSOC);
                 <br>
                 <h2 class="heading-category">Categorías:</h2>
                     <div class="tags-container">
-                        <a href="index.php?categoria=0" class="tag <?php echo $idCategoria === 0 ? 'tag-selected' : ''; ?>">TODO</a>
-                        <a href="index.php?categoria=1" class="tag <?php echo $idCategoria === 1 ? 'tag-selected' : ''; ?>">TENDENCIAS</a>
-                        <a href="index.php?categoria=2" class="tag <?php echo $idCategoria === 2 ? 'tag-selected' : ''; ?>">DESARROLLO WEB</a>
-                        <a href="index.php?categoria=3" class="tag <?php echo $idCategoria === 3 ? 'tag-selected' : ''; ?>">HACKING</a>
-                        <a href="index.php?categoria=4" class="tag <?php echo $idCategoria === 4 ? 'tag-selected' : ''; ?>">JS</a>
-                        <a href="index.php?categoria=5" class="tag <?php echo $idCategoria === 5 ? 'tag-selected' : ''; ?>">SOFTWARE</a>
-                        <a href="index.php?categoria=6" class="tag <?php echo $idCategoria === 6 ? 'tag-selected' : ''; ?>">REDES</a>
-                        <a href="index.php?categoria=7" class="tag <?php echo $idCategoria === 7 ? 'tag-selected' : ''; ?>">HADWARE</a>
+                        <a href="rutas-aprendizaje.php?categoria=0" class="tag <?php echo $idCategoria === 0 ? 'tag-selected' : ''; ?>">TODO</a>
+                        <a href="rutas-aprendizaje.php?categoria=1" class="tag <?php echo $idCategoria === 1 ? 'tag-selected' : ''; ?>">TENDENCIAS</a>
+                        <a href="rutas-aprendizaje.php?categoria=2" class="tag <?php echo $idCategoria === 2 ? 'tag-selected' : ''; ?>">DESARROLLO WEB</a>
+                        <a href="rutas-aprendizaje.php?categoria=3" class="tag <?php echo $idCategoria === 3 ? 'tag-selected' : ''; ?>">HACKING</a>
+                        <a href="rutas-aprendizaje.php?categoria=4" class="tag <?php echo $idCategoria === 4 ? 'tag-selected' : ''; ?>">JS</a>
+                        <a href="rutas-aprendizaje.php?categoria=5" class="tag <?php echo $idCategoria === 5 ? 'tag-selected' : ''; ?>">SOFTWARE</a>
+                        <a href="rutas-aprendizaje.php?categoria=6" class="tag <?php echo $idCategoria === 6 ? 'tag-selected' : ''; ?>">REDES</a>
+                        <a href="rutas-aprendizaje.php?categoria=7" class="tag <?php echo $idCategoria === 7 ? 'tag-selected' : ''; ?>">HADWARE</a>
                     </div>
             </section>
 

@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 $usuarioLogueado = isset($_SESSION["id"]);
 $esAdministrador = isset($_SESSION["rol"]) && $_SESSION["rol"] === 'administrador';
 $rutaActual = basename($_SERVER['PHP_SELF']);
@@ -30,14 +31,15 @@ $rutaActual = basename($_SERVER['PHP_SELF']);
 
                     <?php if ($usuarioLogueado): ?>
                         <li class=""><a class="link <?= $rutaActual == 'index.php' ? 'link-active'  : '' ?>" href="index.php">Blog</a></li>
-                        <li class=""><a class="link <?= $rutaActual == 'about-us.php' ? 'link-active' : '' ?>" href="about-us.php">Quienes somos</a></li>
+                        <li class=""><a class="link <?= $rutaActual == 'rutas-aprendizaje.php' ? 'link-active' : '' ?>" href="rutas-aprendizaje.php">Rutas</a></li>
+                        <li class=""><a class="link <?= $rutaActual == 'about-us.php' ? 'link-active' : '' ?>" href="about-us.php">Quiénes somos</a></li>
                         <?php if ($esAdministrador): ?>
                             <li class=""><a class="link" target="_blank" href="/codershub_zeus/">Admin Panel </a></li>
                         <?php endif; ?>
                         <li class=""><a class="link" href="assets/config/controlador-cerrar-sesion.php">Salir</a></li>
                         
                     <?php else: ?>
-                        <li class=""><a class="link <?= $rutaActual == 'about-us.php' ? 'link-active' : '' ?>" href="about-us.php">Quienes somos</a></li>
+                        <li class=""><a class="link <?= $rutaActual == 'about-us.php' ? 'link-active' : '' ?>" href="about-us.php">Quiénes somos</a></li>
                         <li class=""><a class="link <?= $rutaActual == 'register.php' ? 'link-active' : '' ?>" href="register.php">Registro</a></li>
                         <li class=""><a class="link <?= $rutaActual == 'login.php' ? 'link-active' : '' ?>" href="login.php">Ingreso</a></li>
                     <?php endif; ?>
@@ -48,7 +50,8 @@ $rutaActual = basename($_SERVER['PHP_SELF']);
                 <ul class="nav-list">
                     <?php if ($usuarioLogueado): ?>
                         <li class="nav-item"><a class="link <?= $rutaActual == 'index.php' ? 'link-active'  : '' ?>" href="index.php">Blog</a></li>
-                        <li class="nav-item"><a class="link <?= $rutaActual == 'about-us.php' ? 'link-active' : '' ?>" href="about-us.php">Quienes somos</a></li>
+                        <li class=""><a class="link <?= $rutaActual == 'rutas-aprendizaje.php' ? 'link-active' : '' ?>" href="rutas-aprendizaje.php">Rutas</a></li>
+                        <li class="nav-item"><a class="link <?= $rutaActual == 'about-us.php' ? 'link-active' : '' ?>" href="about-us.php">Quiénes somos</a></li>
                         <?php if ($esAdministrador): ?>
                             <li class="nav-item"><a target="_blank" class="link" href="/codershub_zeus/">Admin Panel </a></li>
                         <?php endif; ?>

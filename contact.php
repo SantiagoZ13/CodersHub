@@ -11,7 +11,7 @@
                         <input class="input" type="text">
                     </div>
                     <div class="wd-100">
-                        <label class="label" for="phone">Numero</label>
+                        <label class="label" for="phone">Número</label>
                         <input class="input" type="text">
                     </div>
                 </div>
@@ -22,8 +22,8 @@
                 <a class="button-primary" href="">Enviar</a>
             </form>
             <div class="contact-info">
-                <h2 class="heading-big">Contactame</h2>
-                <p class="paragraph paragraph-md">Hola, soy Santiago, un estudiante de ingeniería de sistemas y un fullstack developer con experiencia en diferentes tecnologías</p>
+                <h2 class="heading-big">Contáctame</h2>
+                <p class="paragraph paragraph-md">Hola, soy Santiago, un estudiante de ingeniería de sistemas y un FullStack Developer con experiencia en diferentes tecnologías.</p>
                 <div class="contact-links">
                     <a class="paragraph paragraph-sm " href="tel:+573138125514"><img src="assets/tel-icon.png" alt="icono de telefono">+57 313-812-5514</a>
                     <a class="paragraph paragraph-sm " href="mailto:diazsantiagoponce1@gmail.com"><img src="assets/email-icon.png" alt="icono de email">diazsantiagoponce1@gmail.com</a>

@@ -30,15 +30,42 @@ if($id == "" || $token == ""){
 }
 ?>
 <?php include("assets/components/header.php");?> 
-    <main>
-        <section class="blogs-single-container">
-            <div class="blog-title-container">
-                <h2 class="heading-md"><?php echo $titulo ?></h2>
-                <p class="paragraph-md paragraph"><?php echo $usuario; ?> - <?php echo $fecha_registro ?></p>   
-            </div>
-            <img class="wd-100" src="/codershub_zeus/img/<?= $imagen?>" alt="Blog single">
-                <p class="paragraph-md paragraph"><?php echo $descripcion ?></p>
-                <p class="paragraph-md paragraph"><?php echo $texto ?></p>
-        </section>
+<main>
+<section class="m-4 blogs-single-container">
+    <div class="blog-title-container">
+        <h2 class="heading-md"><?php echo $titulo ?></h2>
+        <p class="paragraph-md paragraph"><?php echo $usuario; ?> - <?php echo $fecha_registro ?></p>
+    </div>
+    <p class="paragraph-md paragraph"><?php echo $descripcion ?></p>
+    <div class="d-flex flex-wrap justify-content-center align-items-center">
+        <div class="p-2" style="flex: 1 1 50%;">
+            <img class="w-100 rounded-pill" src="/codershub_zeus/img/<?= $imagen ?>" alt="Blog single">
+        </div>
+        <div class="p-2" style="flex: 1 1 50%;">
+            <p class="paragraph-md paragraph text-center"><?php echo $texto ?></p>
+        </div>
+    </div>
+</section>
+
+<style>
+.blogs-single-container {
+    padding: 20px;
+}
+
+.blog-title-container {
+    margin-bottom: 20px;
+}
+
+.paragraph-md {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .d-flex > div {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+</style>
     </main>
     <?php include("assets/components/footer.php")?>
